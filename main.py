@@ -100,13 +100,3 @@ imprimir(dado)
 
 dado = getInstancias("cap","134")
 imprimir(dado)
-
-dado = getInstancias("cap","81")
-imprimir(dado)
-
-dado = getInstancias("cap","82")
-imprimir(dado)
-
-dado = getInstancias("cap","83")
-imprimir(dado)
-
