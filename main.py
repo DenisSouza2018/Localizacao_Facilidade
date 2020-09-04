@@ -45,6 +45,7 @@ def getInstancias(name,id):
                 cliente.demanda = float(x)
                 cliente.custos = []
                 aux = []
+
             else:
                 vet_custo = [float(field) for field in x.split()]
                 cliente.custos = vet_custo
@@ -73,38 +74,38 @@ def imprimir(dados):
 dados = getInstancias("cap","41")
 imprimir(dados)
 
-dado = getInstancias("cap","42")
-imprimir(dado)
+dados = getInstancias("cap","42")
+imprimir(dados)
 
-dado = getInstancias("cap","43")
-imprimir(dado)
+dados = getInstancias("cap","43")
+imprimir(dados)
 
-dado = getInstancias("cap","44")
-imprimir(dado)
+dados = getInstancias("cap","44")
+imprimir(dados)
 
-dado = getInstancias("cap","51")
-imprimir(dado)
+dados = getInstancias("cap","51")
+imprimir(dados)
 
-dado = getInstancias("cap","81")
-imprimir(dado)
+dados = getInstancias("cap","81")
+imprimir(dados)
 
-dado = getInstancias("cap","82")
-imprimir(dado)
+dados = getInstancias("cap","82")
+imprimir(dados)
 
-dado = getInstancias("cap","83")
-imprimir(dado)
+dados = getInstancias("cap","83")
+imprimir(dados)
 
-dado = getInstancias("cap","84")
-imprimir(dado)
+dados = getInstancias("cap","84")
+imprimir(dados)
 
-dado = getInstancias("cap","131")
-imprimir(dado)
+dados = getInstancias("cap","131")
+imprimir(dados)
 
-dado = getInstancias("cap","132")
-imprimir(dado)
+dados = getInstancias("cap","132")
+imprimir(dados)
 
-dado = getInstancias("cap","133")
-imprimir(dado)
+dados = getInstancias("cap","133")
+imprimir(dados)
 
-dado = getInstancias("cap","134")
-imprimir(dado)
+dados = getInstancias("cap","134")
+imprimir(dados)
