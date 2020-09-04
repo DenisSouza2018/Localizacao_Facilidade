@@ -52,13 +52,61 @@ def getInstancias(name,id):
 
     return  vet_clientes
 
+def imprimir(dado):
+    # Estrutura responsavel por imprimir dicionario
+    cont = 0
+    for c in dado:
+        print(cont, ':', len(c), c)
+        cont += 1
 
+    print('-------------------------')
+    print(' ')
+
+dado = getInstancias("cap","41")
+imprimir(dado)
+
+dado = getInstancias("cap","42")
+imprimir(dado)
+
+dado = getInstancias("cap","43")
+imprimir(dado)
+
+dado = getInstancias("cap","44")
+imprimir(dado)
+
+dado = getInstancias("cap","51")
+imprimir(dado)
+
+dado = getInstancias("cap","81")
+imprimir(dado)
+
+dado = getInstancias("cap","82")
+imprimir(dado)
+
+dado = getInstancias("cap","83")
+imprimir(dado)
+
+dado = getInstancias("cap","84")
+imprimir(dado)
 
 dado = getInstancias("cap","131")
-cont = 0
+imprimir(dado)
 
-#Estrutura responsavel por imprimir dicionario
-for c in dado:
-    print(cont,':',len(c), c)
-    cont+=1
+dado = getInstancias("cap","132")
+imprimir(dado)
+
+dado = getInstancias("cap","133")
+imprimir(dado)
+
+dado = getInstancias("cap","134")
+imprimir(dado)
+
+dado = getInstancias("cap","81")
+imprimir(dado)
+
+dado = getInstancias("cap","82")
+imprimir(dado)
+
+dado = getInstancias("cap","83")
+imprimir(dado)
 
