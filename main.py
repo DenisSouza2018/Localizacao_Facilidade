@@ -11,6 +11,11 @@ import numpy as np
 #     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+class dado:
+    def __init__(self, demanda, custo):
+        self.demanda = demanda
+        self.custo = custo
+
 class Cliente():
     demanda = 0
     custos = []
@@ -25,6 +30,7 @@ def getInstancias(name,id):
     cliente = Cliente()
     vet_clientes = []
     aux = []
+    results = []
 
     with open(directory, 'rb') as item:
         #Processo para remover o matriz inicial
@@ -48,22 +54,24 @@ def getInstancias(name,id):
                 aux += cliente.custos
                 if len(aux) == n_deposito:
                     vet_clientes.append(aux)
+                    results.append(dado(cliente.demanda,aux))
 
 
-    return  vet_clientes
 
-def imprimir(dado):
+    return  results
+
+def imprimir(dados):
     # Estrutura responsavel por imprimir dicionario
     cont = 0
-    for c in dado:
-        print(cont, ':', len(c), c)
+    for c in dados:
+        print(cont, ':',len(c.custo), c.custo, ',',c.demanda)
         cont += 1
 
     print('-------------------------')
     print(' ')
 
-dado = getInstancias("cap","41")
-imprimir(dado)
+dados = getInstancias("cap","41")
+imprimir(dados)
 
 dado = getInstancias("cap","42")
 imprimir(dado)
