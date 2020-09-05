@@ -11,6 +11,9 @@ import numpy as np
 #     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+from Funcao_Escrita.write import write_file
+
+
 class dado:
     def __init__(self, demanda, custo):
         self.demanda = demanda
@@ -109,3 +112,6 @@ imprimir(dados)
 
 dados = getInstancias("cap","134")
 imprimir(dados)
+
+## Função responsavel por gravar o resultado em um arquivo
+#write_file(dados,'instancia_2')
